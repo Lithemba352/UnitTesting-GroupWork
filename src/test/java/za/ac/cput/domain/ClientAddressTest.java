@@ -11,12 +11,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class ClientAddressTest {
-
-
-
-
-
-
         @Test
         //object equality test
         public void ObjectEqualityTest(){
@@ -73,19 +67,7 @@ public class ClientAddressTest {
             assertEquals(2,clientAddressSet.size());
         }
 
-        @Test
-            //failing test
-        void FailingTest2(){
-            Set<ClientAddress> clientAddressSet= new HashSet<>();
 
-            for (int i = 0; i < 2; i++) {
-                ClientAddress clientAddress = new ClientAddress("Sir Lowry","Cape Town");
-                clientAddressSet.add(clientAddress);
-            }
-            System.out.println(clientAddressSet;
-            assertSame(2,clientAddressSet.size());
-            assertNotSame(1,clientAddressSet.size());
-        }
 
         @Test
         @Timeout(value = 1000,unit = TimeUnit.MILLISECONDS)
